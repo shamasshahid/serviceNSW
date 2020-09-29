@@ -13,6 +13,8 @@ class RegistrtaionTableViewCell: UITableViewCell {
         return String(describing: RegistrtaionTableViewCell.self)
     }
     
+    static let blueLabelColor = "blueLabel"
+    
     static let rowHeight: CGFloat = 100
     
     @IBOutlet weak var plateNumberLabel: UILabel!
@@ -27,7 +29,12 @@ class RegistrtaionTableViewCell: UITableViewCell {
     
     func updateView() {
         plateNumberLabel.text = viewModel.plateNumber
-        expiryLabel.text = viewModel.expiryDate
         carDetailLabel.text = viewModel.makeModelDetail
+        expiryLabel.text = viewModel.expiryDate
+        if viewModel.isExpired {
+            expiryLabel.textColor = UIColor.red
+        } else {
+            expiryLabel.textColor = UIColor(named: RegistrtaionTableViewCell.blueLabelColor)
+        }
     }
 }

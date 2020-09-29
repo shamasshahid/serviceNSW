@@ -9,7 +9,7 @@ import Foundation
 
 class RegistrationDetailViewModel {
     
-    let model: RegistrationElement
+    private let model: RegistrationElement
     
     init(registrationModel: RegistrationElement) {
         model = registrationModel
@@ -17,6 +17,10 @@ class RegistrationDetailViewModel {
     
     var numberOfRows: Int {
         return 3
+    }
+    
+    var plateNumber: String {
+        return model.plateNumber.uppercased()
     }
     
     func getDetailCellViewModel() -> RegistrationDetailCellViewModel {

@@ -21,7 +21,9 @@ class RegistrationCellViewModel {
     var expiryDate: String {
         return registrationModel.registration.displayDate
     }
-    
+    var isExpired: Bool {
+        return registrationModel.registration.expired
+    }
     var makeModelDetail: String {
         let vehicle = registrationModel.vehicle
         let detailInfo = [vehicle.colour.uppercased(), vehicle.make.uppercased(), vehicle.model.uppercased()]

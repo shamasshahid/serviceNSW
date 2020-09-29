@@ -13,6 +13,8 @@ protocol RegistrationDetailCell {
 
 class RegistrationDetailTableViewCell: UITableViewCell, RegistrationDetailCell {
 
+    static let blueLabelColor = "blueLabel"
+    
     @IBOutlet weak var plateNumberLabel: UILabel!
     @IBOutlet weak var makeModelLabel: UILabel!
     @IBOutlet weak var registrationExpiryLabel: UILabel!
@@ -31,7 +33,8 @@ class RegistrationDetailTableViewCell: UITableViewCell, RegistrationDetailCell {
     func updateView() {
         plateNumberLabel.text = viewModel.plateNumber
         makeModelLabel.text = viewModel.makeModelDetail
-        registrationExpiryLabel.text = viewModel.expiryDate
         vinLabel.text = viewModel.vinDetail
+        registrationExpiryLabel.text = viewModel.expiryDate
+        registrationExpiryLabel.textColor = viewModel.isExpired ? UIColor.red : UIColor(named: RegistrationDetailTableViewCell.blueLabelColor)
     }
 }
