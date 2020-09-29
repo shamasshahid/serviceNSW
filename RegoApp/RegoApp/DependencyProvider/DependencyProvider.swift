@@ -9,8 +9,10 @@ import Foundation
 
 protocol Provider {
     
+    /// Get Router object for backend access
     static func getRouter() -> Routable
     
+    /// Get WebSerivce instance
     static func getService() -> WebService
 }
 

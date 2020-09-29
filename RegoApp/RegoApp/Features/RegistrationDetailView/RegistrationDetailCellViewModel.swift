@@ -32,6 +32,10 @@ class RegistrationDetailCellViewModel {
         return detailString
     }
     
+    var isExpired: Bool {
+        return model.registration.expired
+    }
+    
     var expiryDate: String {
         return model.registration.displayDate
     }
