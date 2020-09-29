@@ -35,6 +35,10 @@
 		068FCFA22521A3D9004373BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068FCFA12521A3D9004373BC /* Assets.xcassets */; };
 		068FCFA52521A3D9004373BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068FCFA32521A3D9004373BC /* LaunchScreen.storyboard */; };
 		06912CC9252229F500B8EC94 /* RegistrationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06912CC8252229F500B8EC94 /* RegistrationCellViewModel.swift */; };
+		06F79776252302E40086ABA1 /* RegistrationElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F79775252302E40086ABA1 /* RegistrationElement.swift */; };
+		06F7977C252302F80086ABA1 /* Insurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7977B252302F80086ABA1 /* Insurer.swift */; };
+		06F797802523031C0086ABA1 /* RegistrationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7977F2523031C0086ABA1 /* RegistrationDetail.swift */; };
+		06F79784252303470086ABA1 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F79783252303470086ABA1 /* Vehicle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,10 @@
 		068FCFAB2521A3DA004373BC /* RegoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		068FCFB12521A3DA004373BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06912CC8252229F500B8EC94 /* RegistrationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCellViewModel.swift; sourceTree = "<group>"; };
+		06F79775252302E40086ABA1 /* RegistrationElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationElement.swift; sourceTree = "<group>"; };
+		06F7977B252302F80086ABA1 /* Insurer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurer.swift; sourceTree = "<group>"; };
+		06F7977F2523031C0086ABA1 /* RegistrationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDetail.swift; sourceTree = "<group>"; };
+		06F79783252303470086ABA1 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				0659E9A3252218E00048AAD1 /* RegistrationsResponse.swift */,
+				06F79775252302E40086ABA1 /* RegistrationElement.swift */,
+				06F7977B252302F80086ABA1 /* Insurer.swift */,
+				06F7977F2523031C0086ABA1 /* RegistrationDetail.swift */,
+				06F79783252303470086ABA1 /* Vehicle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,9 +171,8 @@
 		0659E9CF25221AEB0048AAD1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				06F797742523027E0086ABA1 /* RegistrationListView */,
 				0669F3B12522BD3000F5DCE6 /* RegistrationDetailView */,
-				0659E9D9252220CA0048AAD1 /* RegistrationsCellView */,
-				0659E9D8252220BA0048AAD1 /* RegistrationsListView */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -187,9 +198,9 @@
 		0669F3B12522BD3000F5DCE6 /* RegistrationDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				06F797732523014A0086ABA1 /* RegistrationDetailView */,
 				0669F3B62522C41C00F5DCE6 /* RegistrationDetailCellViews */,
-				0669F3B22522BD5C00F5DCE6 /* RegistrationDetailViewController.swift */,
-				0669F3C12522C52900F5DCE6 /* RegistrationDetailViewModel.swift */,
+				0669F3BD2522C4BF00F5DCE6 /* RegistrationDetailCellViewModel.swift */,
 			);
 			path = RegistrationDetailView;
 			sourceTree = "<group>";
@@ -198,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				0672B8B02522EC5E009D962A /* Cells */,
-				0669F3BD2522C4BF00F5DCE6 /* RegistrationDetailCellViewModel.swift */,
 			);
 			path = RegistrationDetailCellViews;
 			sourceTree = "<group>";
@@ -264,6 +274,24 @@
 				068FCFB12521A3DA004373BC /* Info.plist */,
 			);
 			path = RegoAppTests;
+			sourceTree = "<group>";
+		};
+		06F797732523014A0086ABA1 /* RegistrationDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				0669F3B22522BD5C00F5DCE6 /* RegistrationDetailViewController.swift */,
+				0669F3C12522C52900F5DCE6 /* RegistrationDetailViewModel.swift */,
+			);
+			path = RegistrationDetailView;
+			sourceTree = "<group>";
+		};
+		06F797742523027E0086ABA1 /* RegistrationListView */ = {
+			isa = PBXGroup;
+			children = (
+				0659E9D9252220CA0048AAD1 /* RegistrationsCellView */,
+				0659E9D8252220BA0048AAD1 /* RegistrationsListView */,
+			);
+			path = RegistrationListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,17 +402,21 @@
 				0659E9B7252219A90048AAD1 /* WebService.swift in Sources */,
 				063EF5742522EDAC0051D554 /* RegistrationInsurerTableViewCell.swift in Sources */,
 				068FCF9B2521A3D5004373BC /* SceneDelegate.swift in Sources */,
+				06F797802523031C0086ABA1 /* RegistrationDetail.swift in Sources */,
 				0669F3B82522C44200F5DCE6 /* RegistrationDetailCellTableViewCell.swift in Sources */,
 				0659E9D325221B0C0048AAD1 /* RegistrationsListViewModel.swift in Sources */,
 				0659E9BC252219DD0048AAD1 /* RegistrationsListService.swift in Sources */,
 				063EF5782522EFC00051D554 /* RegistrationWeightTableViewCell.swift in Sources */,
 				0669F3C72522D22200F5DCE6 /* Date+Extension.swift in Sources */,
 				0659E9AC252219150048AAD1 /* RegistrationsListRouter.swift in Sources */,
+				06F7977C252302F80086ABA1 /* Insurer.swift in Sources */,
 				0659E9C225221A430048AAD1 /* DependencyProvider.swift in Sources */,
 				0659E9A4252218E00048AAD1 /* RegistrationsResponse.swift in Sources */,
 				0669F3BE2522C4BF00F5DCE6 /* RegistrationDetailCellViewModel.swift in Sources */,
 				0669F3B32522BD5C00F5DCE6 /* RegistrationDetailViewController.swift in Sources */,
+				06F79776252302E40086ABA1 /* RegistrationElement.swift in Sources */,
 				0659E9DB252221010048AAD1 /* RegistrtaionTableViewCell.swift in Sources */,
+				06F79784252303470086ABA1 /* Vehicle.swift in Sources */,
 				0659E99E2522179A0048AAD1 /* Routable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
