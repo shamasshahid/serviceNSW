@@ -156,18 +156,26 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pb7-dn-bkL" secondAttribute="trailing" constant="10" id="0Gc-oC-yTr"/>
                                                 <constraint firstItem="gmI-Lh-WXw" firstAttribute="top" secondItem="sET-d9-uew" secondAttribute="bottom" constant="8" id="1cj-li-Iu4"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zNf-qE-uBI" secondAttribute="trailing" constant="10" id="3qK-AZ-bjU"/>
                                                 <constraint firstItem="zNf-qE-uBI" firstAttribute="top" secondItem="AeL-AN-q2D" secondAttribute="bottom" constant="20" id="4xj-rd-ZIF"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="H6A-JI-lgF" secondAttribute="bottom" constant="3" id="9Gw-Ec-Idd"/>
                                                 <constraint firstItem="dlZ-X7-7le" firstAttribute="leading" secondItem="YUg-sc-vcl" secondAttribute="leadingMargin" id="FPL-2c-DWe"/>
                                                 <constraint firstItem="gmI-Lh-WXw" firstAttribute="leading" secondItem="YUg-sc-vcl" secondAttribute="leadingMargin" id="FyD-tB-HOA"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sET-d9-uew" secondAttribute="trailing" constant="10" id="JAw-82-9mf"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AeL-AN-q2D" secondAttribute="trailing" constant="10" id="NOW-SR-e2Y"/>
                                                 <constraint firstItem="sET-d9-uew" firstAttribute="leading" secondItem="YUg-sc-vcl" secondAttribute="leadingMargin" id="NUG-sD-4Wp"/>
                                                 <constraint firstItem="dlZ-X7-7le" firstAttribute="top" secondItem="YUg-sc-vcl" secondAttribute="topMargin" id="QdV-j0-lk1"/>
                                                 <constraint firstItem="Pb7-dn-bkL" firstAttribute="leading" secondItem="YUg-sc-vcl" secondAttribute="leadingMargin" id="SvN-42-oGO"/>
                                                 <constraint firstItem="Pb7-dn-bkL" firstAttribute="top" secondItem="zNf-qE-uBI" secondAttribute="bottom" constant="8" symbolic="YES" id="TM3-rx-ALy"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="H6A-JI-lgF" secondAttribute="trailing" constant="10" id="Tto-3X-tlg"/>
                                                 <constraint firstItem="AeL-AN-q2D" firstAttribute="leading" secondItem="YUg-sc-vcl" secondAttribute="leadingMargin" id="Vbi-U8-4fC"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dlZ-X7-7le" secondAttribute="trailing" constant="10" id="XPM-GO-xgm"/>
                                                 <constraint firstItem="H6A-JI-lgF" firstAttribute="leading" secondItem="YUg-sc-vcl" secondAttribute="leadingMargin" id="Yzy-PA-1c9"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2rM-qX-6dV" secondAttribute="trailing" constant="10" id="e8R-tc-I4g"/>
                                                 <constraint firstItem="H6A-JI-lgF" firstAttribute="top" secondItem="2rM-qX-6dV" secondAttribute="bottom" constant="8" id="iEs-dX-UdJ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gmI-Lh-WXw" secondAttribute="trailing" constant="10" id="iI1-HQ-VqU"/>
                                                 <constraint firstItem="2rM-qX-6dV" firstAttribute="leading" secondItem="YUg-sc-vcl" secondAttribute="leadingMargin" id="jbW-tb-IBa"/>
                                                 <constraint firstItem="AeL-AN-q2D" firstAttribute="top" secondItem="dlZ-X7-7le" secondAttribute="bottom" constant="8" id="mJ2-Ii-naS"/>
                                                 <constraint firstItem="2rM-qX-6dV" firstAttribute="top" secondItem="gmI-Lh-WXw" secondAttribute="bottom" constant="20" id="qnP-DS-8mw"/>
@@ -190,13 +198,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insurer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYh-OI-jXA">
-                                                    <rect key="frame" x="20" y="20" width="53" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="20" y="20" width="52" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" name="blackLabel"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALLIANZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ox9-8z-jnB">
-                                                    <rect key="frame" x="81" y="20" width="69.5" height="21"/>
+                                                    <rect key="frame" x="80" y="20" width="69.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" name="blueLabel"/>
                                                     <nil key="highlightedColor"/>
@@ -207,6 +215,7 @@
                                                 <constraint firstItem="ox9-8z-jnB" firstAttribute="centerY" secondItem="zYh-OI-jXA" secondAttribute="centerY" id="UbQ-Da-dpw"/>
                                                 <constraint firstItem="ox9-8z-jnB" firstAttribute="leading" secondItem="zYh-OI-jXA" secondAttribute="trailing" constant="8" symbolic="YES" id="aEC-ec-50Z"/>
                                                 <constraint firstItem="zYh-OI-jXA" firstAttribute="top" secondItem="2jJ-jS-hqY" secondAttribute="topMargin" constant="9" id="bE6-wv-xgq"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ox9-8z-jnB" secondAttribute="trailing" constant="10" id="oUH-2y-2Xu"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="zYh-OI-jXA" secondAttribute="bottom" constant="9" id="v8h-LZ-AGr"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -249,11 +258,15 @@
                                             <constraints>
                                                 <constraint firstItem="EMc-So-1YY" firstAttribute="leading" secondItem="Jds-PM-XbJ" secondAttribute="leadingMargin" id="1NV-Oc-KSl"/>
                                                 <constraint firstItem="Xjz-1Q-Pdg" firstAttribute="top" secondItem="Jds-PM-XbJ" secondAttribute="topMargin" id="2vy-Zd-yQs"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EMc-So-1YY" secondAttribute="trailing" constant="10" id="6IA-UY-lGk"/>
                                                 <constraint firstItem="BvZ-bp-fFi" firstAttribute="top" secondItem="QuM-t0-URB" secondAttribute="bottom" constant="8" id="BxP-5y-xn6"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xjz-1Q-Pdg" secondAttribute="trailing" constant="10" id="C6E-9d-1bN"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="BvZ-bp-fFi" secondAttribute="bottom" constant="6" id="PSP-w5-6eP"/>
                                                 <constraint firstItem="QuM-t0-URB" firstAttribute="top" secondItem="EMc-So-1YY" secondAttribute="bottom" constant="20" id="R3W-mC-gTI"/>
                                                 <constraint firstItem="BvZ-bp-fFi" firstAttribute="leading" secondItem="Jds-PM-XbJ" secondAttribute="leadingMargin" id="Vtd-Yt-g5I"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BvZ-bp-fFi" secondAttribute="trailing" constant="10" id="cPc-Ec-XgT"/>
                                                 <constraint firstItem="EMc-So-1YY" firstAttribute="top" secondItem="Xjz-1Q-Pdg" secondAttribute="bottom" constant="8" id="dPG-7q-iv0"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QuM-t0-URB" secondAttribute="trailing" constant="10" id="hpa-9z-82A"/>
                                                 <constraint firstItem="QuM-t0-URB" firstAttribute="leading" secondItem="Jds-PM-XbJ" secondAttribute="leadingMargin" id="mlb-72-I6H"/>
                                                 <constraint firstItem="Xjz-1Q-Pdg" firstAttribute="leading" secondItem="Jds-PM-XbJ" secondAttribute="leadingMargin" id="rcr-cR-jca"/>
                                             </constraints>
